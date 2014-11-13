@@ -1,6 +1,6 @@
 {
     "name": "ABSCore/Authentication",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "repositories": [
         {
             "type": "composer",
@@ -13,7 +13,7 @@
     ],
     "require": {
         "php" : ">=5.3.0",
-        "ABSCore/DataAccess": "dev-master",
+        "ABSCore/DataAccess": "1.0.*",
         "zendframework/zend-authentication": "2.3.*"
     },
     "require-dev": {
