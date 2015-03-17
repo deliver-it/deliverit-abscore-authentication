@@ -1,6 +1,6 @@
 {
     "name": "ABSCore/Authentication",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "repositories": [
         {
             "type": "composer",
@@ -8,12 +8,12 @@
         },
         {
             "type": "vcs",
-            "url": "http://10.1.1.10:8080/absoluta/abscore-data-access.git"
+            "url": "http://10.1.1.10/deliverit/abscore-data-access.git"
         }
     ],
     "require": {
         "php" : ">=5.3.0",
-        "ABSCore/DataAccess": "1.0.*",
+        "ABSCore/DataAccess": "1.*",
         "zendframework/zend-authentication": "2.3.*"
     },
     "require-dev": {
