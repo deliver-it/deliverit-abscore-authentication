@@ -134,7 +134,12 @@ class DataAccess implements AdapterInterface
         $method = $this->getAuthenticationMethod();
 
         $method = $method->bindTo($this, $this);
-        if ($method($user, $this->getPassword())) {
+        $result = $method($user, $this->getPassword());
+        if ($result instanceof Result) {
+            return $result;
+        }
+        
+        if ($result) {
             return new Result(Result::SUCCESS, $this->createIdentity($user), array('Successful authentication!'));
         }
 
